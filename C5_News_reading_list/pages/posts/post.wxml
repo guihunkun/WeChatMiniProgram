@@ -1,0 +1,108 @@
+<import src="post-item/post-item-template.wxml" />
+  <!-- <text>post</text> -->
+  <view>
+    <swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="2000">
+
+      <!-- /*垂直滚动*/ -->
+      <!-- <swiper vertical="true" indicator-dots="true" autoplay="true" interval="5000"> -->
+
+      <swiper-item>
+        <image src="/images/sjl1.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/sjl2.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/sjl3.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/sjl4.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/sjl5.jpg"></image>
+      </swiper-item>
+    </swiper>
+
+
+    <block wx:for="{{posts_key}}" wx:key="" wx:for-item="item">
+      <view class="post-container">
+        <view class="post-author-date">
+          <image class="post-author" src="/images/post/s1.jpg"></image>
+          <text class="post-date">{{item.date}}  {{index}}</text>
+        </view>
+        <text class="post-title">斯嘉丽简介</text>
+        <image class="post-image" src="/images/post/s4.jpg"></image>
+        <text class="post-content">斯嘉丽·约翰逊（Scarlett Johansson），1984年11月22日生于纽约，美国女演员。
+    </text>
+        <view class="post-like">
+          <image class="post-like-image" src="../../images/icon/chat.png"></image>
+          <text class="post-like-font">92</text>
+          <image class="post-like-image" src="../../images/icon/view.png"></image>
+          <text class="post-like-font">65</text>
+        </view>
+      </view>
+    </block>
+
+
+    <view class="post-container">
+      <view class="post-author-date">
+        <image class="post-author" src="/images/post/s1.jpg"></image>
+        <text class="post-date">Nov 29 2018</text>
+      </view>
+      <!-- <text class="post-title">{{title}}</text>   -->
+      <text class="post-title">早年经历</text>
+      <image class="post-image" src="/images/post/s3.jpg"></image>
+      <text class="post-content">
+    <!-- <text wx:if="{{false}}" class="post-content"> -->
+    {{"斯嘉丽"+gh.content}}{{a+b+c}}
+    <!-- {{content}}     -->
+    <!-- 斯嘉丽8岁开始就从事专业表演，9岁开始拍电视，10岁演电影。而她对演戏的兴趣，3岁时就显露了出来。 -->
+    <!-- 长大后斯嘉丽进入了一家专门培养年轻演员的演艺学校学习，毕业后很快就登上小剧场舞台。她的舞台处女作的搭档是伊桑·霍克。 -->
+    </text>
+      <view class="post-like">
+        <image class="post-like-image" src="../../images/icon/chat.png"></image>
+        <text class="post-like-font">92</text>
+        <image class="post-like-image" src="../../images/icon/view.png"></image>
+        <text class="post-like-font">65</text>
+      </view>
+    </view>
+
+    <block wx:for="{{posts_keys}}" wx:key="" wx:for-item="item">
+      <view class="post-container">
+        <view class="post-author-date">
+          <image class="post-author" src="/images/post/s1.jpg"></image>
+          <text class="post-date">{{item.date}}  {{index}}</text>
+        </view>
+        <text class="post-title">{{item.title}}</text>
+        <image class="post-image" src="/images/post/s4.jpg"></image>
+        <text class="post-content">斯嘉丽·约翰逊（Scarlett Johansson），1984年11月22日生于纽约，美国女演员。
+    </text>
+        <view class="post-like">
+          <image class="post-like-image" src="../../images/icon/chat.png"></image>
+          <text class="post-like-font">92</text>
+          <image class="post-like-image" src="../../images/icon/view.png"></image>
+          <text class="post-like-font">65</text>
+        </view>
+      </view>
+    </block>
+
+
+
+
+
+<!--  -->
+<!--  -->
+    <block wx:for="{{posts_keys}}" wx:key="" wx:for-item="item">
+      <template is="postItem" data="{{item}}" />
+    </block>
+
+<!--  -->
+<!--  -->
+
+
+
+
+
+
+
+  </view>

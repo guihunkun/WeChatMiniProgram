@@ -1,0 +1,18 @@
+<template name="postItem">
+  <view class="post-container">
+    <view class="post-author-date">
+      <image class="post-author" src="/images/post/s1.jpg"></image>
+      <text class="post-date">{{item.date}}  {{index}}</text>
+    </view>
+    <text class="post-title">斯嘉丽简介</text>
+    <image class="post-image" src="/images/post/s4.jpg"></image>
+    <text class="post-content">斯嘉丽·约翰逊（Scarlett Johansson），1984年11月22日生于纽约，美国女演员。
+    </text>
+    <view class="post-like">
+      <image class="post-like-image" src="../../images/icon/chat.png"></image>
+      <text class="post-like-font">92</text>
+      <image class="post-like-image" src="../../images/icon/view.png"></image>
+      <text class="post-like-font">65</text>
+    </view>
+  </view>
+</template>
