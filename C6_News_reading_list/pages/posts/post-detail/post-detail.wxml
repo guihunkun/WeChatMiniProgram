@@ -1,0 +1,27 @@
+<!-- <text>
+  这是文章详情页
+</text> -->
+<view class="container">
+  <image class="head-image" src="/images/5.jpg"></image>
+  <image class="audio" src="/images/music/music-start.png"></image>
+  <view class="author-date">
+    <image class="avatar" src="/images/gh.gif"></image>
+    <text class="author">胡歌</text>
+    <text class="const-text">发表于</text>
+    <text class="date">三天前</text>
+  </view>
+  <text class="title">钢铁侠</text>
+  <view class="tool">
+    <view class="circle-img">
+
+      <image wx:if="{{collected}}" src="/images/icon/collection.png"></image>
+      <image wx:else src="/images/icon/collection-anti.png"></image>
+      <image class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">正文内容</text>
+
+
+
+</view>
