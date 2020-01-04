@@ -1,0 +1,11 @@
+<!-- wxml是编写小程序骨架的文件 -->
+<view class="container">
+<!-- style="width:200rpx;height:200rpx" -->
+  <image class="user-avater " src="/images/gh.jpg"></image>
+  <!-- Hello, 鬼魂 -->
+  <text class="user-name">Hello, 鬼魂</text>
+  <!-- <text class="user-name"><text style="color:red">Hello \n</text>, 鬼魂</text> -->
+  <view class="moto-container">
+    <text class="moto">开启新世界</text>
+  </view>
+</view>
