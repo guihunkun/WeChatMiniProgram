@@ -1,0 +1,7 @@
+<view class="container">
+    <image class="avatar" src="/images/gh.gif"></image>
+    <text class="motto">Hello, 鬼魂</text>
+    <view class="journey-container" bindtap="onTap">
+        <text class="journey">开启小程序之旅</text>
+    </view>
+</view>

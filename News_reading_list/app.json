@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/movies/movies"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80"
+  }
+}
